@@ -1,0 +1,90 @@
+void main() {
+  print("hello world");
+  var name = "Muhammad Kamran ";
+  print(name);
+  int age = 25;
+  print(age);
+
+  //   Main Data Types in Dart
+
+  //    var - any data type (kamran,25,true)
+  //   -int - whole numbers (42, -10)
+  //   -double - decimal numbers (3.14, -2.5)
+  //   -String - text ("Hello", 'World')
+  //   -num - whole number , decimal number( 42,42.5,00.1)
+  //   -bool - true or false
+  //   -List - ordered collection [1, 2, 3]
+  //   -Map - key-value pairs {'name': 'John'}
+
+  // Valid variable naming in Dart:
+
+  //   -Start with letter or underscore: userName, _temp
+  //   -Use camelCase: myVariableName
+  //   -Can contain numbers: user1, item2
+  //   -Cannot use keywords: class, if, while
+
+  String fullName = "Muhammad Kamran ";
+  int currentAge = 40;
+  double height = 5.4;
+  num cellNumber = 0321822160;
+
+  print("My name is :${fullName}");
+  print("My age is :${currentAge}");
+  print("My height is :${height}");
+  print("My cell Number is :${cellNumber}");
+  print("*" * 50);
+  print("Arithmetic Operators is start");
+  print("*" * 50);
+
+  int num1 = 21;
+  int num2 = 5;
+
+  // Try these
+  print('Sum: ${num1 + num2}');
+  print('Difference: ${num1 - num2}');
+  print('Product: ${num1 * num2}');
+  print('Division: ${num1 / num2}');
+  print('Integer Division: ${num1 ~/ num2}');
+  print('Remainder: ${num1 % num2}');
+  
+  print("*" * 50);
+  print("Comparison (Relational) Operators");
+  print("*" * 50);
+  
+  print(num1 == num2);  // false - Equal to
+  print(num1 != num2);  // true  - Not equal to
+  print(num1 > num2);   // true - Greater than
+  print(num1 < num2);   // false  - Less than
+  print(num1 >= num2);  // true - Greater than or equal
+  print(num1 <= num2);  // false  - Less than or equal
+  
+  print("*" * 50);
+  print("Logical Operators");
+  print("*" * 50);
+  
+  print(num1 != num2 && num1 >= num2);
+  print(num1 != num2 || !(num1 >= num2));
+  
+  bool isStudent = true;
+  bool hasID = false;
+  
+  print(isStudent && hasID);  // false - AND (both must be true)
+  print(isStudent || hasID);  // true  - OR (at least one true)
+  print(!isStudent);          // false - NOT (opposite)
+  
+  
+  
+  
+  
+  print(10>5 || 5>10 && 10==200);
+  
+  
+  
+  
+}
+after exteact 
+copy in c drive 
+open flutter 
+copy bin path
+open envirmont varibale 
+click environment variables> path >new
