@@ -28,23 +28,24 @@ void main() {
   } else {
     print("fail");
   } */
-  /* List<int> number = [10, 2, 9, 11, 16, 14, 19, 19];
+  List<int> number = [10, 2, 9, 11, 16, 14, 19, 19];
   print(number);
   print(number.length);
   print(number[2]);
   print(number[number.length - 1]);
   print(number.first);
   print(number.last);
-  print(number.elementAt(3)); */
+  print(number.elementAt(3));
+  
 
-  List<String> fruitsName = ["Mango", "Orange", "Banana", "Kiwi", "Grapes"];
+ /*  List<String> fruitsName = ["Mango", "Orange", "Banana", "Kiwi", "Grapes"];
   print(fruitsName);
   print(fruitsName.length);
   print(fruitsName[2]);
   print(fruitsName[fruitsName.length - 1]);
   print(fruitsName.first);
   print(fruitsName.last);
-  print(fruitsName.elementAt(3));
+  print(fruitsName.elementAt(3)); */
 
 
 
