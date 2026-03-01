@@ -4,7 +4,6 @@
 // flutter download and ste the path
 // go to environment varibale > path >new copy bin folder path.
 
-import 'dart:io';
 
 void main() {
 /*   print("hello World ");
