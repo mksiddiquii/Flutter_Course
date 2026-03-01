@@ -1,0 +1,30 @@
+void main() {
+  print("*" * 50);
+  String name = "Muhammad Kamran Siddiqui";
+  int age = 40;
+  double percentage = 60.2;
+  String preResult = "Pass";
+  print('My Name is ${name}, \nI am ${age} year old ,\nMy previous resut ${preResult} with ${percentage}%. ');
+  print("*" * 50);
+  print("Question No.2");
+  print("*" * 50);
+  int num1 = 10;
+  int num2 = 4;
+  int addTwoNum = num1 + num2;
+  print('10+4= ${addTwoNum}');
+  print("*" * 50);
+  print("Question No.3");
+  print("*" * 50);
+  double dividesTwoNum = num1 / num2;
+  print ("10/4 =${dividesTwoNum}");
+  print("*" * 50);
+  print("Question No.4");
+  print("*" * 50);
+  int reminder = num1 % num2;
+  print("10%4 = ${reminder}");
+  print("*" * 50);
+  print("Question No.5");
+  print("*" * 50);
+  bool isEqual = num1 == num2;
+  print('10 == 4 ${isEqual}');
+}
