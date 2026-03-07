@@ -16,19 +16,23 @@ temp 20-30 then Normal in Temp
 temp 30-40 then Its Hot
 temp >=40 then Its Very Hot */
   int temperature = 42;
+  String weatherReport;
   if (temperature < 0) {
-    print("Freezing Weather");
+    weatherReport = ("Freezing Weather");
   } else if (temperature <= 10) {
-    print("Very Cold Weather");
+    weatherReport = ("Very Cold Weather");
   } else if (temperature <= 20) {
-    print("Cold Weather");
+    weatherReport = ("Cold Weather");
   } else if (temperature <= 30) {
-    print("Normal in Temp");
+    weatherReport = ("Normal in Temp");
   } else if (temperature <= 40) {
-    print("Its Hot");
+    weatherReport = ("Its Hot");
   } else {
-    print("Its Very Hot");
+    weatherReport = ("Its Very Hot");
   }
+  print("Temperature is $temperature => Condition is $weatherReport");
+
+  
   separator(2);
   /* Q.2:Take two variables and store age then using if/else condition to determine oldest and youngest among them. */
 
@@ -44,6 +48,8 @@ temp >=40 then Its Very Hot */
   } else {
     print("Both are the same age: $age1");
   }
+
+
   separator(3);
   /* Q.3: A student will not be allowed to sit in exam if his/her attendance is less than 75%. Create integer variables and assign value:
 Number of classes held = 16,
@@ -62,6 +68,8 @@ Is student is allowed to sit in exam or not? */
       "Your Percentage is $percentage which is not above the 75%, you are not allowed to sit in Exam",
     );
   }
+
+
   separator(4);
   /* Q.4: Create a variable marks and assign any integer value between 0 and 100. Then use if/else conditions to assign a grade:Marks >= 90: Grade A
 Marks >= 80 and < 90: Grade B
@@ -82,8 +90,9 @@ Marks < 60: Grade F */
   } else {
     grade = "F";
   }
-
   print("Marks: $marks => Grade: $grade");
+
+
   separator(5);
   /* Q.5:Create a list of names and print all names using list. */
   List<String> names = ["Kamran", "Ali", "Aazan", "Usman", "Arshman"];
@@ -93,6 +102,8 @@ Marks < 60: Grade F */
   print("At Index 2 is ${names[2]}");
   print("At Index 4 is ${names[3]}");
   print("At Index 3 is ${names[4]}");
+
+
   separator(6);
   /* Q.6: Create a list of Days and print only  Sunday */
   List<String> days = [
@@ -146,6 +157,63 @@ Marks < 60: Grade F */
     },
   ];
   print(students[2]);
-  separator(8)
-  
+  print(students[0]["Name"]);
+  print("""  Name :${students[0]["Name"]}
+  Class :${students[0]["Class"]}
+  RollNo :${students[0]["RollNo"]}
+  Grade : ${students[0]["Grade"]}
+  Percentage : ${students[0]["Percentage"]}
+    """);
+
+
+  separator(8);
+  /* Q.8: Create a list of numbers & write a program to get the smallest & greatest number from a list. */
+  List<int> numbers = [31, -5, 99, 67, 1, 89, 451, 45, 12, -98];
+
+  numbers.sort();
+
+  int smallest = numbers.first;
+  int greatest = numbers.last;
+
+  print("List: $numbers");
+  print("Smallest: $smallest");
+  print("Greatest: $greatest");
+
+
+  separator(9);
+  /* Q.9: Given a list of integers, write a dart code that returns the maximum value from the list. */
+  List<int> num = [31, -5, 99, 67, 1, 89, 451, 45, 12, -98];
+  num.sort();
+  print("List: $num");
+  print("Maxiumum Value :${num.last}");
+
+
+  separator(10);
+  /* Q.10: remove all false values from below list by using removeWhere or retainWhere property.
+List<String> usersEligibility = ['John', 'Alice', 'eligible', 'Mike', 'Sarah', 'Tom'];
+ */
+  List<String> usersEligibility = [
+    'John',
+    'Alice',
+    'eligible',
+    'Mike',
+    'Sarah',
+    'Tom',
+  ];
+  usersEligibility.removeWhere((i) => i != "eligible");
+  print(
+    "Eligible Value in list after Remove those are not eligible ${usersEligibility}",
+  );
+  List<String> usersEligibility1 = [
+    'John',
+    'Alice',
+    'eligible',
+    'Mike',
+    'Sarah',
+    'eligible',
+    'Tom',
+    'eligible',
+  ];
+  usersEligibility1.retainWhere((i) => i == "eligible");
+  print("Retain Only Values in lists those are eligible ${usersEligibility1}");
 }
