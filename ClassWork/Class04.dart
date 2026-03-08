@@ -1,25 +1,25 @@
 void main() {
   List<int> number = [10, 2, 9, 11, 16, 14, 19, 19];
   print(number);
-  number.sort();
-  print(number);
+  number.sort();//arrange the array asending order
+  print(number); 
   print(number.reversed.toList()); // return in list
   print(number.reversed); // return in ()value
   print(List.of(number.reversed)); // return in list
-  print(number.isNotEmpty);
-  print(number.isEmpty);
+  print(number.isNotEmpty);// return bool value 
+  print(number.isEmpty);//return bool value  
 
   List<int> vals = [9, 10];
   print(vals);
-  vals.add(11);
+  vals.add(11);// add single value in list
   print('11 added at the last position: $vals');
-  vals.addAll([12, 13, 14]);
+  vals.addAll([12, 13, 14]); //add bluck vlaue 
   print('Values added at the last index: $vals');
-  vals.insert(0, 1);
+  vals.insert(0, 1);// add single value at particular index 
   print('1 added at index 0: $vals');
-  vals.insertAll(1, [2, 3, 4, 5, 6, 7, 8]);
+  vals.insertAll(1, [2, 3, 4, 5, 6, 7, 8]); // add bluck value at particular index 
   print('All numbers added at index 1: $vals');
-  vals[1] = 3;
+  vals[1] = 3; // value update at 1 index 
   print('Replaced 2 with 3: $vals');
   vals.replaceRange(3, 6, [
     7,
@@ -41,9 +41,9 @@ void main() {
     'subjects': ['Math', 'Science', 'English'],
     'marks': 95,
   };
-  print(student);
-  print(student.keys);
-  print(student.values);
+  print(student);// whole map print
+  print(student.keys);//only keys print
+  print(student.values);//only value print
   print(student['name']);
   print(student['age']);
   print(student['grade']);
