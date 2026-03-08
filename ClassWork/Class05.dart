@@ -30,4 +30,11 @@ void main() {
   print(student.entries);
   student["age"] = 24;
   print(student);
+  print("=" * 50);
+ //The .. is called Cascade Operator — it lets you perform multiple operations on the same object without repeating the object name.
+  student
+    ..['name'] = "M.Kamran"
+    ..['age'] = 20
+    ..['grade'] = "A+"
+    ..['marks'] = 97;
 }
