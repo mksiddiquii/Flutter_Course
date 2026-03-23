@@ -1,10 +1,9 @@
-void main() {
-  void separator(Q) {
+separator(Q) {
     print("=" * 50);
     print("Question No.$Q");
     print("=" * 50);
   }
-
+void main() {
   separator(1); //Question NO.1
   /* Q.1 :Write a program to read temperature in centigrade and display a suitable message according to temperature:
 You have num variable temperature = 42;
