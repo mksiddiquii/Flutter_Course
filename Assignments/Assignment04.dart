@@ -211,37 +211,53 @@ List<Map<String, bool>> usersEligibility = [
     );
   }
 
-   separator(19); //Question NO.19
-    Map<String, dynamic> product = {
-      "name": "Laptop",
-      "price": 999.99,
-      "quantity": 5,
-    };
-    product["quantity"] > 0 ? print("In stock") : print("Out of stock");
+  separator(19); //Question NO.19
+  /* Q.19: Given a map representing a product with keys "name", "price", and "quantity", write Dart code to check if the product is in stock. If the quantity is greater than 0, print "In stock", otherwise print "Out of stock".
+ */
+  Map<String, dynamic> product = {
+    "name": "Laptop",
+    "price": 999.99,
+    "quantity": 5,
+  };
+  if (product["quantity"] > 0) {
+    print("In stock");
+  } else {
+    print("Out of stock");
+  }
 
-  //   separator(20); //Question NO.20
-  //   Map<String, dynamic> car = {
-  //     "brand": "Toyota",
-  //     "color": "Red",
-  //     "isSedan": true,
-  //   };
-  //   (car["isSedan"] == true && car["color"] == "Red")
-  //       ? print("Match")
-  //       : print("No match");
+  separator(20); //Question NO.20
+  /* Q.20: Create a map named "car" with the following key-value pairs: "brand" as "Toyota", "color" as "Red", "isSedan" as true. Write Dart code to check if the car is a sedan and red in color. Print "Match" if both conditions are true, otherwise print "No match". */
+  Map<String, dynamic> car = {
+    "brand": "Toyota",
+    "color": "Red",
+    "isSedan": true,
+  };
+  if (car["isSedan"] == true && car["color"] == "Red") {
+    print("Match");
+  } else {
+    print("No match");
+  }
 
-  //   separator(21); //Question NO.21
-  //   Map<String, dynamic> user = {
-  //     "name": "Alice",
-  //     "isAdmin": true,
-  //     "isActive": true,
-  //   };
-  //   (user["isAdmin"] == true && user["isActive"] == true)
-  //       ? print("Active admin")
-  //       : print("Not an active admin");
+  separator(21); //Question NO.21
+  /* Q.21: Given a map representing a user with keys "name", "isAdmin", and "isActive", write Dart code to check if the user is an active admin. If the user is both an admin and active, print "Active admin", otherwise print "Not an active admin". */
+  Map<String, dynamic> user = {
+    "name": "Alice",
+    "isAdmin": true,
+    "isActive": true,
+  };
+  if (user["isAdmin"] && user["isActive"] == true) {
+    print("Active admin");
+  } else {
+    print("Not an active admin");
+  }
 
-  //  separator(22); //Question NO.22
-  //   Map<String, int> cart = {"Apple": 3, "Banana": 5, "Orange": 2};
-  //   cart.containsKey("Apple")
-  //       ? print("Product found")
-  //       : print("Product not found");
+  separator(22); //Question NO.22
+  /* Q.22: Given a map representing a shopping cart with keys as product names and values as quantities, write Dart code to check if a product named "Apple" exists in the cart. Print "Product found" if it exists, otherwise print "Product not found". */
+  Map<String, int> cart = {"Apple": 3, "Banana": 5, "Orange": 2};
+  if (cart.containsKey("Apple")) {
+    print("Product found");
+  } else {
+    print("Product not found");
+  }
+  
 }
