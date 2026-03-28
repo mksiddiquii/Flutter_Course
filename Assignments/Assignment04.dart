@@ -129,7 +129,7 @@ List<Map<String, bool>> usersEligibility = [
     {'name': 'Sarah', 'eligible': true},
     {'name': 'Tom', 'eligible': false},
   ];
-  usersEligibility.retainWhere((i) => i['eligible'] == true);
+  usersEligibility.retainWhere((i) => i['eligible']);
   print(usersEligibility);
   usersEligibility.removeWhere((i) => i['eligible'] == false);
   print(usersEligibility);
