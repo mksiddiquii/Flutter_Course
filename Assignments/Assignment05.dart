@@ -96,10 +96,25 @@ void main() {
   separator(9); //Question NO.09
   /* Write a program that reverses a string using a for loop. */
   reverseString(String words) {
-    for (var i = words.length; i >= 0; i--) {
-      print(words[i]);
+    String reversed = "";
+    for (var i = words.length - 1; i >= 0; i--) {
+      reversed += words[i];
     }
+    print(reversed);
   }
 
   reverseString("Kami");
+  separator(10); //Question NO.010
+  /* Create a function that takes a string and counts the number of vowels using a for-in loop. */
+  findVowels(String sentence) {
+    int vowels = 0;
+    for (var i = 0; i < sentence.length; i++) {
+      if (sentence.toLowerCase()[i] == "a" || sentence.toLowerCase()[i] == "e" || sentence.toLowerCase()[i] == "i" || sentence.toLowerCase()[i] == "o" || sentence.toLowerCase()[i] == "u") {
+        vowels += 1;
+      }
+    }
+    print(vowels);
+  }
+
+  findVowels("My Name is Karmran");
 }
