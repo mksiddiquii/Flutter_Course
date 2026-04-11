@@ -1,4 +1,3 @@
-import '../ClassWork/Class07.dart';
 import 'Assignment03.dart';
 
 void main() {
@@ -116,5 +115,5 @@ void main() {
     print(vowels);
   }
 
-  findVowels("My Name is Karmran");
+  findVowels("A squeaky, queueing, audio-loving, miaoued, eutopic zooaea");
 }
