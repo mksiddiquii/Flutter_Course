@@ -243,7 +243,7 @@ void main() {
   /* 3 types of parameters
   1. Required Positional Parameters
   2. Optional Positional Parameters [ ]
-  3. Named Parameters { }*/
+  3. Named Parameters { }*///required and optional
 
   printTable(3);
   printMyInfo("M Kamran ");
