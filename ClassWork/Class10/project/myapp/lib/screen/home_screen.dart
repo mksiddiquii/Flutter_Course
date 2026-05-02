@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Container(decoration: BoxDecoration(border: Border.all(color: Colors.black,width: 1)),
+            Container(decoration: BoxDecoration(border: Border.all(color: Colors.black,width: 5)),
               child: ListTile(
                 leading: CircleAvatar(backgroundImage: NetworkImage("https://cdn.pixabay.com/photo/2017/11/02/00/35/parrot-2909830_1280.jpg"),),
                 title: Text("Kamran Siddiqui",style: TextStyle(color: Colors.black,fontSize: 25,),),
