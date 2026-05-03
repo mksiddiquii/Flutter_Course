@@ -14,7 +14,7 @@ class LogScreen extends StatelessWidget {
           style: TextStyle(
             color: Colors.black,
             fontSize: 20,
-            fontWeight: FontWeight.w100,
+            fontWeight: FontWeight.w400,
           ),
         ),
         actions: [

@@ -64,14 +64,14 @@ Widget Call_log(name, image) {
       title: Text(
         name,
         style: TextStyle(
-          color: Colors.grey[800],
+          color: Colors.red,
           fontSize: 16,
-          fontWeight: FontWeight.w100,
+          fontWeight: FontWeight.normal,
         ),
       ),
       subtitle: Text(
         " April 17 ,17:33 ",
-        style: TextStyle(color: Colors.grey[600], fontSize: 11),
+        style: TextStyle(color: Colors.black, fontSize: 11),
       ),
       tileColor: Colors.white,
       trailing: Column(
