@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whats_app/screen/call_log_screen.dart';
+
 import 'package:whats_app/screen/msg_screen.dart';
-import 'package:whats_app/screen/statues_screen.dart';
+
 
 
 void main() {
